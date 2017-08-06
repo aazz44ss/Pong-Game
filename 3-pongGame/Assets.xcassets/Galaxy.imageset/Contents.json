@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Spaceship.png"
+      "filename" : "Galaxy X1.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Galaxy X2.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Galaxy X3.jpg",
       "scale" : "3x"
     }
   ],
