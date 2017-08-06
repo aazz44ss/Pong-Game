@@ -1,0 +1,73 @@
+{\rtf1\ansi\ansicpg950\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset136 PingFangTC-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15080\viewh9540\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1. create GameStart GameScene GameOver scene\
+\
+2. 
+\f1 \'a6\'62
+\f0 GameScene
+\f1 \'a4\'a4\'ab\'d8\'a5\'df\'bd\'64\'b3\'f2\'ac\'b0\'bf\'c3\'b9\'f5\'a4\'6a\'a4\'70\'aa\'ba\'c3\'e4\'ae\'d8\
+\
+3. add ball and spring and paddle\
+\
+4. \'ab\'d8\'a5\'dftouches function\'a1\'41\'b3\'cc\'a6\'6e\'ac\'4f\'b0\'f2\'a5\'bb\'aa\'ba\'a5\'7c\'ad\'d3\'b3\'a3\'ad\'6e\'ab\'d8\'a5\'df\'a1\'41\'a6\'5d\'ac\'b0touch\'b5\'b9\'aa\'ba\'ac\'4f\'a6\'ec\'a7\'7d\'a1\'41\'a6\'5d\'a6\'b9\'a7\'59\'a8\'cf\'c2\'f7\'b6\'7d\'a4\'46function\'c1\'d9\'ac\'4f\'a5\'69\'a5\'48\'ab\'f9\'c4\'f2\'b0\'6c\'c2\'dc\'b3\'6f\'ad\'d3touch\'a1\'41\'a9\'d2\'a5\'48\'b7\'ed\'a4\'a7\'ab\'e1\'a8\'53\'a6\'b3\'ad\'6e\'a5\'ce\'a8\'ec\'b3\'6f\'ad\'d3touch\'ae\'c9\'a1\'41\'ad\'6e\'b1\'4e\'b0\'6c\'c2\'dc\'ad\'ab\'b7\'73\'ab\'fc\'a6\'56nil\'ab\'dc\'ad\'ab\'ad\'6e\'a1\'44\
+\
+5. \'a6\'62update\'a8\'ba\'c3\'e4\'b3\'5d\'a9\'77\'a8\'43\'ad\'d3frame\'b3\'a3\'a7\'50\'c2\'5f\'a4\'40\'a6\'b8\'a5\'d8\'ab\'65\'b2\'79\'aa\'ba\'b2\'be\'b0\'ca\'b3\'74\'ab\'d7\'a1\'41\'a4\'a3\'ad\'6e\'c5\'fd\'b2\'79\'a4\'d3\'ba\'43\'a9\'ce\'a4\'d3\'a7\'d6\
+\
+6. \'ab\'d8\'a5\'dfSKPhysicsContactDelegate\
+	\'a8\'43\'ad\'d3node\'b3\'a3\'ad\'6e\'ab\'fc\'a9\'77\'a4\'40\'ad\'d3categoryBitMask\'a1\'41\'b3\'6f\'ac\'4f\'a4\'40\'ad\'d332bit\'a1\'41\'b7\'edbit\'a4\'ba1\'a6\'b3\'c1\'70\'b6\'b0\'aa\'ba\'ae\'c9\'ad\'d4\'a4\'7e\'b7\'7c\'a6\'b3\'a4\'cf\'c0\'b3\
+	ex. \
+		category: 0x0\'a1\'4b001\
+		     Mask: 0x0\'a1\'4b010  \'a8\'53\'a6\'b3\
+\
+		category: 0x0\'a1\'4b001\
+		     Mask: 0x0\'a1\'4b101  \'a6\'b3\
+\
+7. didBeginContact\'b3\'5d\'a9\'77\'b7\'ed\'b2\'79\'b1\'bc\'a8\'ec\'a9\'b3\'a4\'55\'ab\'68\'b5\'b2\'a7\'f4\'b9\'43\'c0\'b8\
+\
+8. \'ab\'d8\'a5\'dfblocks\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs22 \cf2 Sub\cf0  TwoDiodeFit()\
+\
+    lastrow = Cells(3, 1).End(xlDown).Row \cf3 '
+\f1 \'a8\'fa\'b1\'6f
+\f2 Voltage
+\f1 \'bd\'64\'b3\'f2
+\f2 \
+\cf0     \
+    \
+    i = 2\
+    Application.ScreenUpdating = \cf2 True\
+\cf0     \cf2 For\cf0  j = 2 \cf2 To\cf0  5 Step 1\
+	    i = i+1\
+        SolverReset\
+        SolverOptions Precision:=1E-09\
+        SolverOptions Derivatives:=1\
+        SolverOk SetCell:=Range("CN" & i), MaxMinVal:=2, byChange:=Range("BC" & i & ":BD" & i)\
+        SolverAdd cellRef:=Range("BB" & i), relation:=1, formulaText:=0.02\
+        SolverAdd cellRef:=Range("BB" & i), relation:=3, formulaText:=2E-05\
+        SolverAdd cellRef:=Range("BC" & i), relation:=1, formulaText:=100\
+        SolverAdd cellRef:=Range("BC" & i), relation:=3, formulaText:=0.01\
+        SolverAdd cellRef:=Range("BD" & i), relation:=1, formulaText:=100\
+        SolverAdd cellRef:=Range("BD" & i), relation:=3, formulaText:=0.01\
+        SolverSolve UserFinish:=\cf2 True\
+\cf0     \cf2 Next\
+\cf0     Application.ScreenUpdating = \cf2 True\
+\cf0 \
+\cf2 End\cf0  \cf2 Sub\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+\
+\
+\
+}

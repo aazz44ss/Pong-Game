@@ -7,7 +7,28 @@
 //
 
 #import "GameOver.h"
+#import "GameScene.h"
 
 @implementation GameOver
+
+
+-(void)didMoveToView:(SKView *)view{
+    NSLog(@"GameOver");
+}
+
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    SKView *skView = (SKView *)self.view;
+    [self removeFromParent];
+    
+    GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
+    scene.scaleMode = SKSceneScaleModeAspectFit;
+    [skView presentScene:scene];
+    
+}
+
+
 
 @end

@@ -7,7 +7,30 @@
 //
 
 #import "GameStart.h"
+#import "GameScene.h"
 
 @implementation GameStart
+
+
+-(void)didMoveToView:(SKView *)view{
+    NSLog(@"GameStart");
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* Called when a touch begins */
+    
+    
+    if(touches){
+        SKView * skView = (SKView *)self.view;
+        [self removeFromParent];
+        GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
+        scene.scaleMode = SKSceneScaleModeAspectFit;
+        [skView presentScene:scene];
+    }
+    
+    
+
+}
+
 
 @end

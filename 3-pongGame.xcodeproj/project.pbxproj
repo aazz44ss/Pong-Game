@@ -15,6 +15,18 @@
 		BD0006681DEAD97200188982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0006661DEAD97200188982 /* Main.storyboard */; };
 		BD00066A1DEAD97300188982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0006691DEAD97300188982 /* Assets.xcassets */; };
 		BD00066D1DEAD97300188982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD00066B1DEAD97300188982 /* LaunchScreen.storyboard */; };
+		BD0006751DEB01B300188982 /* GameStart.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD0006741DEB01B300188982 /* GameStart.sks */; };
+		BD0006771DEB024400188982 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD0006761DEB024400188982 /* GameOver.sks */; };
+		BD00067A1DEB028500188982 /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0006791DEB028500188982 /* GameStart.m */; };
+		BD00067D1DEB02BD00188982 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = BD00067C1DEB02BD00188982 /* GameOver.m */; };
+		BD1DD44A1DF3170B00E9E963 /* ballHitFence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4471DF3170B00E9E963 /* ballHitFence.mp3 */; };
+		BD1DD44B1DF3170B00E9E963 /* ballHitPaddle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4481DF3170B00E9E963 /* ballHitPaddle.mp3 */; };
+		BD1DD4531DF32EFF00E9E963 /* explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4511DF32EFF00E9E963 /* explode.sks */; };
+		BD1DD4541DF32EFF00E9E963 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4521DF32EFF00E9E963 /* spark.png */; };
+		BD1DD4571DF3347E00E9E963 /* ballHitBlocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4551DF3347E00E9E963 /* ballHitBlocks.mp3 */; };
+		BD1DD4581DF3347E00E9E963 /* blockExplode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4561DF3347E00E9E963 /* blockExplode.mp3 */; };
+		BD1DD45A1DF3350900E9E963 /* ramp.sks in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD4591DF3350900E9E963 /* ramp.sks */; };
+		BD1DD45C1DF338E500E9E963 /* block.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BD1DD45B1DF338E500E9E963 /* block.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +43,20 @@
 		BD0006691DEAD97300188982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD00066C1DEAD97300188982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD00066E1DEAD97300188982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD0006741DEB01B300188982 /* GameStart.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStart.sks; sourceTree = "<group>"; };
+		BD0006761DEB024400188982 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		BD0006781DEB028500188982 /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
+		BD0006791DEB028500188982 /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
+		BD00067B1DEB02BD00188982 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		BD00067C1DEB02BD00188982 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
+		BD1DD4471DF3170B00E9E963 /* ballHitFence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ballHitFence.mp3; sourceTree = "<group>"; };
+		BD1DD4481DF3170B00E9E963 /* ballHitPaddle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ballHitPaddle.mp3; sourceTree = "<group>"; };
+		BD1DD4511DF32EFF00E9E963 /* explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explode.sks; sourceTree = "<group>"; };
+		BD1DD4521DF32EFF00E9E963 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		BD1DD4551DF3347E00E9E963 /* ballHitBlocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ballHitBlocks.mp3; sourceTree = "<group>"; };
+		BD1DD4561DF3347E00E9E963 /* blockExplode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blockExplode.mp3; sourceTree = "<group>"; };
+		BD1DD4591DF3350900E9E963 /* ramp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ramp.sks; sourceTree = "<group>"; };
+		BD1DD45B1DF338E500E9E963 /* block.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = block.atlas; path = ../block.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +89,26 @@
 		BD0006571DEAD97200188982 /* 3-pongGame */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DD4451DF316EF00E9E963 /* soundEffect */,
 				BD00065B1DEAD97200188982 /* AppDelegate.h */,
 				BD00065C1DEAD97200188982 /* AppDelegate.m */,
-				BD00065E1DEAD97200188982 /* GameScene.h */,
-				BD00065F1DEAD97200188982 /* GameScene.m */,
-				BD0006611DEAD97200188982 /* GameScene.sks */,
 				BD0006631DEAD97200188982 /* GameViewController.h */,
 				BD0006641DEAD97200188982 /* GameViewController.m */,
 				BD0006661DEAD97200188982 /* Main.storyboard */,
 				BD0006691DEAD97300188982 /* Assets.xcassets */,
+				BD0006781DEB028500188982 /* GameStart.h */,
+				BD0006791DEB028500188982 /* GameStart.m */,
+				BD0006741DEB01B300188982 /* GameStart.sks */,
+				BD00065E1DEAD97200188982 /* GameScene.h */,
+				BD00065F1DEAD97200188982 /* GameScene.m */,
+				BD0006611DEAD97200188982 /* GameScene.sks */,
+				BD00067B1DEB02BD00188982 /* GameOver.h */,
+				BD00067C1DEB02BD00188982 /* GameOver.m */,
+				BD0006761DEB024400188982 /* GameOver.sks */,
+				BD1DD4511DF32EFF00E9E963 /* explode.sks */,
+				BD1DD4591DF3350900E9E963 /* ramp.sks */,
+				BD1DD4521DF32EFF00E9E963 /* spark.png */,
+				BD1DD45B1DF338E500E9E963 /* block.atlas */,
 				BD00066B1DEAD97300188982 /* LaunchScreen.storyboard */,
 				BD00066E1DEAD97300188982 /* Info.plist */,
 				BD0006581DEAD97200188982 /* Supporting Files */,
@@ -85,6 +122,17 @@
 				BD0006591DEAD97200188982 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD1DD4451DF316EF00E9E963 /* soundEffect */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DD4551DF3347E00E9E963 /* ballHitBlocks.mp3 */,
+				BD1DD4471DF3170B00E9E963 /* ballHitFence.mp3 */,
+				BD1DD4481DF3170B00E9E963 /* ballHitPaddle.mp3 */,
+				BD1DD4561DF3347E00E9E963 /* blockExplode.mp3 */,
+			);
+			name = soundEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +166,7 @@
 				TargetAttributes = {
 					BD0006541DEAD97200188982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M83F3GX8TT;
 					};
 				};
 			};
@@ -145,9 +194,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0006621DEAD97200188982 /* GameScene.sks in Resources */,
+				BD1DD4571DF3347E00E9E963 /* ballHitBlocks.mp3 in Resources */,
+				BD1DD4541DF32EFF00E9E963 /* spark.png in Resources */,
+				BD0006771DEB024400188982 /* GameOver.sks in Resources */,
 				BD00066D1DEAD97300188982 /* LaunchScreen.storyboard in Resources */,
+				BD1DD4581DF3347E00E9E963 /* blockExplode.mp3 in Resources */,
+				BD0006751DEB01B300188982 /* GameStart.sks in Resources */,
+				BD1DD45C1DF338E500E9E963 /* block.atlas in Resources */,
+				BD1DD44B1DF3170B00E9E963 /* ballHitPaddle.mp3 in Resources */,
 				BD00066A1DEAD97300188982 /* Assets.xcassets in Resources */,
+				BD1DD45A1DF3350900E9E963 /* ramp.sks in Resources */,
 				BD0006681DEAD97200188982 /* Main.storyboard in Resources */,
+				BD1DD4531DF32EFF00E9E963 /* explode.sks in Resources */,
+				BD1DD44A1DF3170B00E9E963 /* ballHitFence.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD00067A1DEB028500188982 /* GameStart.m in Sources */,
 				BD0006651DEAD97200188982 /* GameViewController.m in Sources */,
 				BD00065D1DEAD97200188982 /* AppDelegate.m in Sources */,
+				BD00067D1DEB02BD00188982 /* GameOver.m in Sources */,
 				BD0006601DEAD97200188982 /* GameScene.m in Sources */,
 				BD00065A1DEAD97200188982 /* main.m in Sources */,
 			);
@@ -265,6 +326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -275,10 +337,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "3-pongGame/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.--pongGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -286,10 +353,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "3-pongGame/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.--pongGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -312,6 +384,7 @@
 				BD0006731DEAD97300188982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
